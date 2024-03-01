@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body
+{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.top_1_container {
+    width: 100%;
+    min-height:90vh;
+    background-image: linear-gradient(rgba(0, 9, 30, 0.7), rgba(0, 9, 30, 0.7)), url(campusbg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.top_2_container {
+    display: flex;
+}
+.image {
+    padding-top:3%;
+    padding-left:8%;
+    display: flex;
+}
+.image p {
+    padding-left:1%;
+    font-size: 30px;
+    color: rgb(220, 231, 240);
+    letter-spacing: 2px;
+    padding-top: 1%;
+   
+}
+nav {
+    position: absolute;
+    left:48%;
+    top:72px; /* Adjust this value as needed */
+}
+.navlinks {
+    flex: 1;
+}
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+}
+.navlinks ul li a {
+    color: rgb(220, 231, 240);
+    font-size: larger;
+    text-decoration: wavy;
+}
+.navlinks ul li a:hover {
+    text-decoration: underline;
+    color: rgba(125, 196, 255, 0.854);
+}
+.text-box {
+    color: rgb(220, 231, 240);
+    margin-top:8%;
+    text-align: center;
+    font-size: larger;
+}
+.visit-btn
+{
+    background: transparent;
+    border:1px solid rgb(220, 231, 240) ;
+    padding:10px;
+    margin-right:10px;
+    padding-left:35px;
+    padding-right:35px;
+    color:aliceblue;
+    text-decoration: none;
+}
+.visit-btn:hover
+{
+ border:1px solid rgb(237, 59, 0);
+ background-color:rgb(237, 59, 0);
+}
+.visit-btn i
+{
+    padding-left:8px;
+}
+.sub-option
+{
+    margin-top:0%;
+    display:none;
+}
+.sub-option ul li
+{
+    list-style: none;
+    padding:8px;
+}
+.sub-option ul li a{
+    text-decoration: none;
+    color:beige;
+    font-size:20px;
+}
+.visit-btn:hover + .sub-option,.sub-option:hover
+ {
+    display: block;
+    position:absolute;
+    padding:30px;
+    right:31%;
+    background-color:rgb(237, 59, 0);
+}
+.sub-option ul li a:hover
+   {
+    color:black;
+   }
+@media (max-width: 700px) {
+    .image {
+        padding-left:30%;
+        padding-top:15%;
+        display:flex;
+    }
+    .image img {
+        height: 40px; /* Adjust this value as needed */
+    }
+    .image p {
+      
+       padding-left:2%;
+        font-size:20px;
+        color:rgb(220, 231, 240);
+        letter-spacing: 1px;
+    }
+    .text-box {
+        font-size: 12px;
+        margin-top:35%;
+    }
+    .text-box h1
+    {
+        margin-bottom:15px;
+    }
+    .visit-btn
+    {
+        font-size:15px;
+    }
+    .sub-option ul li
+    {
+        padding:6px;
+    }
+    .sub-option ul li a{
+        font-size: 13px;
+    }
+    .visit-btn:hover + .sub-option,.sub-option:hover
+    {
+        padding:10px;
+        right:-1px;
+    }
+    nav {
+        position: absolute;
+        left:1%;
+        top:15px;
+    }
+    .navlinks ul li {
+        display: inline-block;
+        font-size:9px;
+        padding-left:4px; /* Adjust this value as needed */
+    }
+}
+.teacher
+{
+    display:flex;
+    margin-top:30px;
+    justify-content: center;
+}
+.description
+{
+    margin-left:3%;
+    margin-right:5%;
+    padding:20px;
+    display:flex;
+}
+.description:hover{
+    border-radius:1%;
+    background:rgb(241, 251, 255);
+    border:1px solid rgb(221, 239, 245);
+}
+.dis-img
+{
+ padding-top:30px;
+}
+.dis-img img
+{
+    border-radius:50%;
+}
+.text
+{
+  padding-top:30px;
+}
+.text h2{
+    padding:20px;
+    text-align: center;
+    font-size:30px;
+}
+.row1 
+{
+    display:flex;
+}
+.row2
+{
+    display:flex;
+}
+.row3 
+{
+    display:flex;
+}
+.heading
+{
+    padding:10px 5px 10px 30px;
+    color:rgb(51, 29, 250);
+    font-size:18px;
+}
+.sub-heading
+{
+    padding:10px 0px 10px 8px;
+    font-size:18px;
+}
+@media(max-width:700px)
+{
+    .teacher
+    {
+     flex-direction:column;
+    }
+    .description
+    {
+        margin-left:2%;
+        margin-right:3%;
+        padding:12px;
+    }
+    .dis-img
+    {
+     padding-top:10px;
+    }
+    .dis-img img
+    {
+        border-radius:50%;
+        width:150px;
+    }
+    .text
+    {
+      padding-top:30px;
+    }
+    .text h2{
+        padding:10px;
+        padding-top:25px;
+        text-align:center;
+        font-size:18px;
+    }
+    .heading
+    {
+        padding:10px 3px 0px 8px;
+        color:rgb(51, 29, 250);
+        font-size:12px;
+    }
+    .sub-heading
+    {
+        padding:10px 0px 0px 10px;
+        font-size:12px;
+    }
+}
+/*footer*/
+.foot
+{   
+    width:100%;
+    background:linear-gradient(rgb(3, 11, 28),rgb(3, 11, 28));
+    height:68vh;
+}
+.list
+{
+    display:flex;
+    margin:40px 80px 50px 80px;
+    text-align:center;
+} 
+.links-useful
+{
+    color:rgb(104, 103, 103);
+}
+.links-useful h3 
+{
+    padding:70px 30px 40px 15px;
+}
+.links-useful ul li 
+{
+ padding:16px 50px 16px 30px;
+ font-size:20px;
+ list-style:none;
+}
+.links-useful ul li a
+{
+  color:rgb(248, 230, 207);
+   text-decoration:none;
+}
+.links-useful a
+{
+    color:rgb(244, 224, 198);
+    text-decoration:none; 
+    font-size:20px;
+}
+.links-useful p
+{
+    font-size:20px;
+    padding-top:8px;
+    padding-left:40px;
+    color:rgb(253, 244, 232);
+}
+.links-useful p i
+{
+    margin-right:10px;
+    font-size:25px;
+}
+.rule
+{
+    width:100%;
+    background:linear-gradient(rgb(3, 11, 28),rgb(3, 11, 28));
+    height:15vh;
+    border-top:1px solid white;
+    padding-top:22px;
+}
+.rule1{
+    display:flex;
+    justify-content: center;
+    padding-left:15%;
+}
+.social
+{
+    padding-left:3%;
+}
+.social a img
+{
+    padding-left:20px;
+    padding-top:20px;
+}
+.twenty-5 img
+{
+ padding-left:60px;
+}
+@media(max-width:700px)
+{
+    .foot
+    {
+       height:169vh;
+       background-size:cover;
+    }
+    .list
+   {
+    display:block;
+    margin:10px 40px 10px 30px;
+    text-align:center;
+   } 
+   .links-useful h3 
+   {
+    padding:40px 30px 20px 20px;
+    font-size:25px;
+   }
+   .links-useful ul li 
+   {
+    padding:10px 50px 0px 50px;
+    font-size:12px;
+    list-style:none;
+  }
+  .links-useful p
+{
+    font-size:18px;
+    padding-top:6px;
+    padding-left:20px;
+    color:rgb(253, 244, 232);
+}
+.links-useful a
+{
+    font-size:18px;
+}
+.links-useful p i
+{
+    margin-right:10px;
+    font-size:23px;
+}
+.rule1 img
+{
+   height:50px; 
+} 
+.rule1{
+    display:block;
+    padding-left:20%;
+}
+.social
+{
+    padding-left:20%;
+    display:flex;
+}
+.social a img
+{
+    padding-left:10px;
+    padding-top:10px;
+    height:20px;
+}
+.twenty-5 img
+{
+padding-top:12px;
+padding-left:100px;
+width:50px;
+}
+.rule
+{
+    height:25vh;
+}
+}
